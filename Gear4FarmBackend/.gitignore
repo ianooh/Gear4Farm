@@ -1,0 +1,10 @@
+# Ignore virtual environment
+env/
+# Ignore .env file with sensitive information
+.env
+# Ignore __pycache__ files and .DS_Store (for macOS users)
+__pycache__/
+*.pyc
+.DS_Store
+# Ignore database files (if using SQLite for development)
+*.sqlite3
