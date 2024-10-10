@@ -1,0 +1,22 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+    <h2>{{ machinery.name }}</h2>
+    <p>{{ machinery.description }}</p>
+    <p>Price per day: {{ machinery.price_per_day }}</p>
+    <p>Available: {% if machinery.available %}Yes{% else %}No{% endif %}</p>
+
+    <h3>Book this Machinery</h3>
+    {% if machinery.available %}
+        <form method="post" action="{% url 'create_booking' machinery.id %}">
+            {% csrf_token %}
+            <label for="start_date">Start Date:</label>
+            <input type="date" name="start_date" required>
+            <label for="end_date">End Date:</label>
+            <input type="date" name="end_date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    {% else %}
+        <p>This machinery is currently unavailable for booking.</p>
+    {% endif %}
+{% endblock %}

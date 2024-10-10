@@ -1,0 +1,15 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+    <h2>Available Farm Machinery</h2>
+    <ul>
+        {% for machinery in machinery_list %}
+            <li>
+                <a href="{% url 'machinery_detail' machinery.id %}">
+                    {{ machinery.name }} - {{ machinery.price_per_day }} per day
+                </a>
+                <p>{{ machinery.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

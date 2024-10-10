@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear4Farm - Book Farm Machinery</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Gear4Farm</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'machinery_list' %}">Home</a></li>
+                <li><a href="{% url 'user_profile' %}">Profile</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Page-specific content will be injected here -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Gear4Farm. All rights reserved.</p>
+    </footer>
+</body>
+</html>
