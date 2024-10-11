@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #0a8e0e;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .intro {
+            background: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 0.25rem;
+        }
+
+        .features {
+            background: #e9ecef;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gear4Farm</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Payments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Find and Book Your Perfect Farm Equipment</h2>
+            <p>Explore our booking services, manage your reservations, and enjoy a seamless experience.</p>
+            <a class="btn" href="#">Get Started</a>
+        </section>
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Secure Payments</h3>
+                    <p>Our platform ensures that your transactions are safe and secure.</p>
+                </div>
+                <div class="feature">
+                    <h3>Reliable Reservations</h3>
+                    <p>Easily manage your bookings and reservations in one place.</p>
+                </div>
+                <div class="feature">
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help you anytime you need assistance.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Booking Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
