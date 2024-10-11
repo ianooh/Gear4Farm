@@ -1,5 +1,3 @@
-markdown
-Copy code
 # Gear4Farm
 
 ## Overview
@@ -52,29 +50,20 @@ Copy code
    git clone https://github.com/your-username/gear4farm.git
    cd gear4farm
 Create a Virtual Environment:
-
-bash
-Copy code
 python -m venv env
 source env/bin/activate  # On Windows: .\env\Scripts\activate
-Install Backend Dependencies:
 
-bash
-Copy code
+Install Backend Dependencies:
 pip install -r requirements.txt
+
 Database Setup
 Configure Environment Variables: Create a .env file in the project root and add:
-
-makefile
-Copy code
 SECRET_KEY=your_secret_key
 DEBUG=True
 DATABASE_USER=your_db_user
 DATABASE_PASSWORD=your_db_password
-Set Up the Database: Update the database settings in Gear4Farm/settings.py for MySQL:
 
-python
-Copy code
+Set Up the Database: Update the database settings in Gear4Farm/settings.py for MySQL:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -85,26 +74,19 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-Run Migrations:
 
-bash
-Copy code
+Run Migrations:
 python manage.py makemigrations
 python manage.py migrate
-Create a Superuser:
 
-bash
-Copy code
+Create a Superuser:
 python manage.py createsuperuser
+
 Running the Server
 Start the Development Server:
-bash
-Copy code
 python manage.py runserver
-Visit http://127.0.0.1:8000/ in your browser to access the app.
+
 Project Structure
-bash
-Copy code
 Gear4Farm/
 ├── gear4farm/             # Main Django project settings
 │   ├── settings.py
@@ -132,6 +114,7 @@ Gear4Farm/
 │       └── scripts.js
 ├── manage.py              # Django management script
 └── README.md              # Project documentation
+
 Usage
 Farmers: Register, browse available machinery, make bookings, and manage rentals through the platform.
 Equipment Owners: Register, list machinery, and manage rental requests from farmers.
@@ -192,7 +175,7 @@ Copy code
 - Update the API endpoints and their descriptions if you add more features.
 - Include additional instructions or project details based on any specific requirements or configurations unique to your project.
 
-This README file is designed to be user-friendly and thorough, providing all the necessary information for developers, contributors, and end-users of the Gear4Farm project.
+This README file is designed to be user-friendly and thorough, providing all the necessary i
 
 
 
