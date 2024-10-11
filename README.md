@@ -175,7 +175,7 @@ Copy code
 - Update the API endpoints and their descriptions if you add more features.
 - Include additional instructions or project details based on any specific requirements or configurations unique to your project.
 
-This README file is designed to be user-friendly and thorough, providing all the necessary i
+
 
 
 
