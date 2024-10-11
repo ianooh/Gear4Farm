@@ -115,6 +115,7 @@ Gear4Farm/
 ├── manage.py              # Django management script
 └── README.md              # Project documentation
 
+
 Usage
 Farmers: Register, browse available machinery, make bookings, and manage rentals through the platform.
 Equipment Owners: Register, list machinery, and manage rental requests from farmers.
@@ -144,16 +145,13 @@ We welcome contributions to Gear4Farm! Here’s how you can help:
 
 Fork the repository.
 Create a new branch:
-bash
-Copy code
+
 git checkout -b feature/YourFeature
 Make your changes and commit them:
-bash
-Copy code
+
 git commit -m 'Add your feature'
 Push to your branch:
-bash
-Copy code
+
 git push origin feature/YourFeature
 Open a pull request on GitHub.
 License
@@ -166,14 +164,7 @@ Project Team: support@gear4farm.com
 GitHub Issues: For bug reports or feature requests, please use the GitHub issues page.
 Thank you for using Gear4Farm! We hope this platform makes accessing farm equipment easier and more efficient for farmers across the globe.
 
-sql
-Copy code
 
-### Customization Tips:
-- Replace `https://github.com/your-username/gear4farm.git` with the actual GitHub repository link.
-- Adjust placeholders like `your_secret_key`, `your_db_user`, and `your_db_password` with real values.
-- Update the API endpoints and their descriptions if you add more features.
-- Include additional instructions or project details based on any specific requirements or configurations unique to your project.
 
 
 
